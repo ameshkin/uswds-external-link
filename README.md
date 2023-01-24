@@ -20,7 +20,8 @@ Here is an example of usage. IMPORTANT: Place this code at the bottom of the pag
     target: '_blank',
     rel: 'noopener',
     className: 'usa-link usa-link--alt usa-link--external',
-    strokeColor: '#122E51'
+    strokeColor: '#122E51',
+    showForMail: false
   });
 </script>
 ```
