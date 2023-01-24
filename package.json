@@ -1,0 +1,36 @@
+{
+  "name": "@usdoj/uswds-external-link",
+  "version": "1.0.0",
+  "description": "A client-side script for automatically detecting non-government external links.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "browserify -g uglifyify lib/index.js -s extlink > extlink.min.js",
+    "lint": "npx eslint lib/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usdoj/extlink.git"
+  },
+  "keywords": [
+    "external",
+    "links",
+    "aria",
+    ".gov",
+    "government",
+    "external link",
+    "508 Compliance"
+  ],
+  "author": "ameshkin <amir.meshkin@usdoj.gov>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/usdoj/extlink/issues"
+  },
+  "homepage": "https://github.com/usdoj/extlink#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "uglifyify": "^5.0.0"
+  }
+}
