@@ -10,7 +10,7 @@ A client-side script for automatically detecting external links and adding an SV
 
 Here is an example of usage. IMPORTANT: Place this code at the bottom of the page, just before the closing </body> tag.
 ```
-<script type="text/javascript" src="/path/to/exitscript.min.js"></script>
+<script type="text/javascript" src="/path/to/extlink.min.js"></script>
 <script type="text/javascript">
   extlink({
     title: 'You are now leaving this agency website.',
