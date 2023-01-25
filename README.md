@@ -115,5 +115,4 @@ yarn lint
 
 1. Background masking to remove any underline from the icon
 2. Testing with jsdom and mocha
-2. Custom callback for individual links using a `data-function` attribute
 3. Animations and hovers
