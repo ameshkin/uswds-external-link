@@ -30,8 +30,29 @@ If you use the `svgfile` option to override the SVG, then you will need to provi
 
 If you do not provide a hex code for `strokeColor`, then you must use the `.stroke-color` class to apply a color.
 
-Details for each option are in the `index.js` file.
+## Props
 
+There are no options that are required.  You will need to use css to style your icon if you don't set a stroke color. 
+
+You can manually override options such as `target` and `rel` by putting them in your link.
+
+| Property               | Type     |      Default       | Description                                                            |
+|------------------------|----------|:------------------:|------------------------------------------------------------------------|
+| `title`      | String   |       `null`       | The title for the `<a>` link                                           |
+| `ariaLabel`          | String   |  `External Link`   | The aria label for the SVG Icon                                        |
+| `svgfile`          | String   | Default Svg String | The SVG file in the form of a string                                   |
+| `exclude`           | Array    |        `[]`        | A list of domains to exclude from this script.                         |
+| `target`            | String   |      `_blank`      | The target attribute such as `_blank`                                  |
+| `rel`        | String   |     `noopener`     | The rel attribute such as 'noopener'.                                  |
+| `className`           | String   |       `null`       | A class to assign to the `<a>` link                                    |
+| `strokeColor`   | Hex Code |        `null`        | The stroke color for the SVG Icon                                      |
+| `showForMail`       | Boolean  |          `false`          | Setting this flag to true will show an icon for `mailto:` and `tel:` links |
+
+    rel: The rel attribute such as 'noopener'.
+    strokeColor: The icon color to use for the SVG icon.
+      You will need to use CSS if this option not set.
+    className: A class to assign to the <a> link.
+    showForMail: If set to true, the icon will appear on mail and tel links
 ## Styling
 
 The default SVG is a 10 pixel square and may need to be styled depending on your theme.  You can add style to the `svg-icon` class to modify the padding and color.
