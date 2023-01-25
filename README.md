@@ -48,11 +48,7 @@ You can manually override options such as `target` and `rel` by putting them in 
 | `strokeColor`   | Hex Code |        `null`        | The stroke color for the SVG Icon                                      |
 | `showForMail`       | Boolean  |          `false`          | Setting this flag to true will show an icon for `mailto:` and `tel:` links |
 
-    rel: The rel attribute such as 'noopener'.
-    strokeColor: The icon color to use for the SVG icon.
-      You will need to use CSS if this option not set.
-    className: A class to assign to the <a> link.
-    showForMail: If set to true, the icon will appear on mail and tel links
+
 ## Styling
 
 The default SVG is a 10 pixel square and may need to be styled depending on your theme.  You can add style to the `svg-icon` class to modify the padding and color.
