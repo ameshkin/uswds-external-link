@@ -14,12 +14,12 @@ Here is an example of usage. IMPORTANT: Place this code at the bottom of the pag
 <script type="text/javascript">
   extlink({
     title: 'You are now leaving this agency website.',
-    ariaLabel: "label from page",
+    ariaLabel: "Aria label for the SVG file",
     svgfile: '',
     exclude: [],
     target: '_blank',
     rel: 'noopener',
-    className: 'usa-link usa-link--alt usa-link--external',
+    className: 'usa-link usa-link--external',
     strokeColor: '#122E51',
     showForMail: false
   });
@@ -55,7 +55,9 @@ The default SVG is a 10 pixel square and may need to be styled depending on your
 
 To change the color of the icon, you can add the `svg-alt` class to the link and then change the stroke color in css.
 
+You should always include the `stroke-color` class for the stroke width.  The color can be set using the options or overridden using css. 
 ```scss
+
 .svg-icon {
   padding: 0 3px;
   width: 10px;
@@ -64,8 +66,17 @@ To change the color of the icon, you can add the `svg-alt` class to the link and
 
 .svg-alt {
   .stroke-color {
-    stroke: #C6ECFC!important;
+    stroke: #C6ECFC !important;
   }
+}
+
+// always include
+.stroke-color {
+  // stroke: #004f70;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
 }
 ```
 
